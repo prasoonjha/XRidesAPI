@@ -1,5 +1,6 @@
 # XRidesAPI
 A RESTful API for managing location based data recieved from a ride booking company.
+
 Choice of Server Architecture: 
 XRides delivers about a 200 rides per minute or 288,000 rides per day. This API, while conforming with the REST architecture, makes sure that all the requests made on the client side are served even at peak times of the day. This is ensured by Node's single threaded non-blocking (asynchronous) server. To put things into perspective, a simple file reading Express server built on NodeJS  Express server is capable of handling about 116 requests/sec, which is quite impressive when compared to similar blocking (synchronous) server architecture.
 
